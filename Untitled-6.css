@@ -1,0 +1,24 @@
+/* Simple styles for beginner learners */
+
+/* Make <img> scale nicely on small screens */
+.responsive-img {
+  max-width: 100%; /* image won't overflow its container */
+  height: auto;    /* keeps correct aspect ratio */
+  display: block;  /* removes small whitespace below image */
+  margin: 16px 0;
+}
+
+/* Background image example (decoration) */
+.hero {
+  /* path is relative to the CSS file location */
+  background-image: url("assets/images/hero.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; /* scale to cover the box */
+  height: 200px;          /* fixed height for this example */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.6);
+}
